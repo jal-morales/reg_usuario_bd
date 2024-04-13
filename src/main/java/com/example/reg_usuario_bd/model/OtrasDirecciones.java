@@ -11,7 +11,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "otras_direcciones")
-public class OtrasDirecciones extends RegistroUsuario {
+public class OtrasDirecciones {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
