@@ -40,4 +40,19 @@ private  RegistroUsuarioRepository registroUsuarioRepository;
     public void deleteUsuarios(Integer id_ru){
         registroUsuarioRepository.deleteById(id_ru);
     }
+    @Override
+    public Boolean login(String correo, String pass) {
+        RegistroUsuario a= new RegistroUsuario();
+        Boolean estado;
+        a =registroUsuarioRepository.login(correo,pass);
+
+        if(a != null){
+            estado=true;
+            return estado;
+        }else{
+            estado=false;
+            return estado;
+        }
+
+}
 }

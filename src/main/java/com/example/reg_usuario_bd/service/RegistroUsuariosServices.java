@@ -8,6 +8,7 @@ import com.example.reg_usuario_bd.model.RegistroUsuario;
 public interface RegistroUsuariosServices {
     List<RegistroUsuario> getAllRegistroUsuarios();
     Optional <RegistroUsuario> getRegistroUsuarioById(Integer id_ru);
+    Boolean login (String correo, String pass);
 
 /*CREAR METODOS*/
 
