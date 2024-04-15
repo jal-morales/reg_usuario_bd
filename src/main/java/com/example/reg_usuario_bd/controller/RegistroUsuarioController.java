@@ -48,7 +48,7 @@ public ResponseEntity<ResponseLogin> login (@RequestBody RequestLogin usuario) {
         }
         else{
             responseLogin.setCodigo(01);
-            responseLogin.setMensaje("vuelva a intentar mas tarde");
+            responseLogin.setMensaje("Acceso denegado");
             return new ResponseEntity<>(responseLogin,HttpStatus.BAD_REQUEST);
         }
         
