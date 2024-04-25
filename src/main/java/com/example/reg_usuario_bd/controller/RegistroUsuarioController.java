@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -36,6 +37,23 @@ ResponseLogin responseLogin;
 public List<RegistroUsuario> getAllRegistroUsuarios() {
     return registroUsuarioServices.getAllRegistroUsuarios();
 } 
+
+/*CREAR  */
+@PostMapping
+public RegistroUsuario createPelicula(@RequestBody RegistroUsuario registroUsuario){
+    return registroUsuarioServices.createUsuario(registroUsuario);
+}
+/*Modificar */
+
+@PutMapping("/{id}")
+public RegistroUsuario modificarPelicula(@PathVariable int id, @RequestBody RegistroUsuario registroUsuario) {
+    
+    
+    return registroUsuarioServices.updateUsuario(id, registroUsuario);
+}
+
+
+
 
 @DeleteMapping("/{id}")
 public void deleteUsuarios(@PathVariable Integer id){
