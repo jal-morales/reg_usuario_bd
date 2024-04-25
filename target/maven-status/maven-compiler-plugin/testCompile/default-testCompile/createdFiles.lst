@@ -1,0 +1,3 @@
+com\example\reg_usuario_bd\repository\RegistroUsuarioRepositoryTest.class
+com\example\reg_usuario_bd\RegUsuarioBdApplicationTests.class
+com\example\reg_usuario_bd\service\RegistroUsuariosServicesTest.class
