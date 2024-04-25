@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>reg_usuario_bd</artifactId>
+	<artifactId>registro_usuario</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>reg_usuario_bd</name>
+	<name>registro_usuario</name>
 	<description>Proyecto FS_EX2_S6</description>
 	<properties>
 		<java.version>21</java.version>
