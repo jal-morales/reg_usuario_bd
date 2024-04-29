@@ -17,7 +17,7 @@ public class RegistroUsuarioRepositoryTest {
     private RegistroUsuarioRepository registroUsuarioRepository;
 
     @Test
-    public void createUsuario() {
+    public void createUsuarioTest() {
        /*Aca creamos un objeto pelicula  */ 
         RegistroUsuario registroUsuario = new RegistroUsuario();
         /*Aca seteamos el nombre de la pelicula  */
